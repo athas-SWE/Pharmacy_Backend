@@ -7,7 +7,7 @@ namespace Pharmacy.Entities
         [Key]
         public long Id { get; set; }
 
-        public string Drugs { get; set; }
+        public string Brand { get; set; }
 
         public string Name { get; set; }
 

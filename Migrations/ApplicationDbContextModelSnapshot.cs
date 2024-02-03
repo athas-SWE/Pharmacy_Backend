@@ -30,6 +30,10 @@ namespace Pharmacy.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -46,7 +50,7 @@ namespace Pharmacy.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("medicalDrugs");
+                    b.ToTable("MedicalDrugs");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,6 +10,7 @@ namespace Pharmacy.Context
         {
         }
 
-        public DbSet<MedicalDrugsEntity> medicalDrugs { get; set; }
+        public DbSet<MedicalDrugsEntity> MedicalDrugs { get; set; }
+       
     }
 }

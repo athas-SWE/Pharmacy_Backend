@@ -1,6 +1,6 @@
 ﻿namespace Pharmacy.Dtos
 {
-    public class CreateUpdateProductDto
+    public class CreateUpdateMedicalDrugsDto
     {
         public string Drugs { get; set; }
 
